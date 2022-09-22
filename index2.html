@@ -1,0 +1,89 @@
+<html>
+<head>
+
+<style>
+
+.E1
+{
+	
+	border: 2px solid blue;
+	
+	width: 300px;
+
+	height: 300px;
+
+	padding: 50px;
+
+	margin-left:450px;
+
+
+	margin-top:70px;
+
+	background-color: silver;
+	
+}
+
+</style>
+
+<script>
+
+function sum()
+{
+let a = document.getElementById("t1").value;
+let b = document.getElementById("t2").value;
+let c = document.getElementById("t3").value;
+let d = parseInt(a) + parseInt(b) - parseInt(c);
+document.getElementById("t4").innerHTML = d;
+document.getElementById("t5").innerHTML = "Thank You";
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class = "E1">
+<center>
+<h2>Salary Calculation</h2>
+</center>
+
+<table>
+<tr>
+
+<td><p>Employee Id:</p></td>
+<td><input type = "text"></td>
+</tr>
+<tr>
+<td><p>Employee Name:</p></td>
+<td><input type = "text"></td>
+</tr>
+<tr>
+<td><p>Basic Salary:</p></td>
+<td><input id = "t1" type = "text"></td>
+</tr>
+<tr>
+<td><p>HRA:</p></td>
+<td><input id = "t2" type = "text"></td>
+</tr>
+<tr>
+<td><p>PF:</p></td>
+<td><input id = "t3" type = "text"></td>
+</tr>
+<tr>
+<td><p>Gross Salary</p></td>
+<td><p id = "t4"></p></td>
+</tr>
+
+</table>
+
+<center>
+<button onclick = 'sum()'>Calculate<button>
+</center>
+
+</div>
+
+
+</body>
+
+</html>
